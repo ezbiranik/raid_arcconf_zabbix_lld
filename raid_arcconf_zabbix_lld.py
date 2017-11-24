@@ -172,12 +172,12 @@ if args.obj_type == 'ld':
         
         for ld_num in range(10): # 0-9
 
-            if last_value(res, 'Logical Device number %s' %ld_num):
+            if last_value(res, 'Logical device number %s' %ld_num):
                 obj_data = {}
                 obj_data['{#OBJ_ID}'] = ld_num
                 obj_data['{#OBJ_TYPE}'] = 'ld'
 
-                value = col_value(res, 'Logical Device name', ld_num)
+                value = col_value(res, 'Logical device name', ld_num)
                 if value:
                     obj_data['{#OBJ_ALIAS}'] = value
 
